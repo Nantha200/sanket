@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from ashik.templatepath.net/cameron-main-html/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 May 2025 10:31:07 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Us Page || Cameron || Responsive HTML 5 Template</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../ms-icon-144x144.html">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Bootstrap 4.2.1 CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+
+  <!-- Bootstrap Select 1.13.3 CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css">
+
+
+
+  <style>
+    /* mission,vison */
+    /* .single-mission-one {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+.count-block {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cb6906;
+}
+.inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.single-mission-one {
+    flex: 1 1 calc(33.333% - 20px);
+}
+@media (max-width: 768px) {
+    .single-mission-one {
+        flex: 1 1 100%;
+    }
+} */
+
+    .limited-lines {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: all 0.3s ease;
+      max-height: 20em;
+    }
+
+    .limit-line {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: all 0.3s ease;
+      max-height: 20em;
+    }
+
+    /* Left Box Section */
+    .left-box {
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .left-box:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-box h3 {
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #fc8209;
+      letter-spacing: 0.5px;
+    }
+
+    .left-box ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .left-box li {
+      margin-bottom: 12px;
+      color: #333;
+      font-size: 1rem;
+      line-height: 1.6;
+      position: relative;
+      padding-left: 30px;
+      transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .left-box li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fc8209;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .left-box li:hover {
+      transform: translateX(5px);
+      color: #fc8209;
+      background-color: rgba(252, 130, 9, 0.05);
+      border-radius: 5px;
+      padding-left: 35px;
+    }
+
+    /* Right Box Section */
+    .right-box {
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .right-box:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      /* Matches left-box */
+    }
+
+    /* FAQ Section */
+    .faq-question {
+      cursor: pointer;
+      font-weight: 600;
+      position: relative;
+      padding: 15px 40px 15px 20px;
+      background-color: #f2f2f2;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background-color: #e9ecef;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: #fc8209;
+    }
+
+    .faq-question.active {
+      background-color: #fc8209;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(252, 130, 9, 0.3);
+    }
+
+    .faq-question::after {
+      content: '\203A';
+      /* Right chevron */
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #fc8209;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .faq-question.active::after {
+      content: '\203A';
+      transform: translateY(-50%) rotate(90deg);
+      /* Rotates to point up */
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 15px 20px;
+      background-color: #fff;
+      border-left: 4px solid #fc8209;
+      border-radius: 0 0 8px 8px;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      animation: slideDown 0.3s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    @media (max-width: 767px) {
+
+      .left-box,
+      .right-box {
+        padding: 20px;
+      }
+
+      .left-box h3,
+      .right-box h3 {
+        font-size: 1.6rem;
+      }
+
+      .faq-question {
+        font-size: 1rem;
+        padding: 12px 35px 12px 15px;
+      }
+
+      .faq-answer {
+        font-size: 0.95rem;
+        padding: 12px 15px;
+      }
+    }
+
+    @media (max-width: 338px) {
+      .service-style-one .title-block-style-two .tag-line {
+        font-size: 15px;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .single-service-one .text-block {
+        background-color: white;
+        box-shadow: 0px 0px 25px 0px rgba(13, 29, 13, 0.1);
+        padding: 0 0px;
+        padding-bottom: 54px;
+        padding-top: 40px;
+      }
+
+    }
+
+    .single-testimonials-one .icon-block {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .single-testimonials-one .icon-block i {
+      font-size: 40px;
+      color: #fc8209;
+      /* Or your brand color */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="preloader"></div><!-- /.preloader -->
+  <div class="page-wrapper">
+    <header class="main-header header-style-one">
+      <div class="top-header">
+        <div class="container">
+          <div class="left-info">
+            <p><i class="cameron-icon-email"></i><a href="mailto:ceo@sanketdiagnostic.com">ceo@sanketdiagnostic.com</a>
+            </p>
+          </div><!-- /.left-info -->
+          <div class="right-info">
+            <ul class="info-block">
+              <li><i class="cameron-icon-support"></i><a href="#">+260974642600</a></li>
+            </ul>
+          </div>
+          <div class="right-side-box nav-social">
+            <div class="social">
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+
+              <a href="#"><i class="fa fa-twitter"></i></a>
+
+              <a href="#"><i class="fa fa-vimeo"></i></a>
+
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div><!-- /.container -->
+      </div><!-- /.top-header -->
+      <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+        <div class="container clearfix">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="logo-box clearfix">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/resources/logo_main_3.png" class="main-logo" alt="logo" />
+              <img src="images/resources/logo_main_3.png" class="stricky-logo" alt="logo" />
+            </a>
+
+            <button class="menu-toggler" data-target=".header-style-one .main-navigation">
+              <span class="fa fa-bars"></span>
+            </button>
+          </div>
+
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="main-navigation ">
+            <ul class=" navigation-box">
+
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li class="current">
+                <a href="about.html">About</a>
+              </li>
+             <li>
+                                <a href="services.html">Services</a>
+                           
+                            </li>
+              <li>
+                <a href="our-process.html">Our Process</a>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+                 <li>
+                            <a href="#" style="border: 2px solid #ee961a; border-radius: 6px; padding: 6px 10px;
+                             color: #ee961a; background: #fff; transition: background 0.2s, color 0.2s, border-color 0.2s;" 
+                             class="book-appointment-link" onclick="openPopup()">Book Appointment</a>
+                           
+                        </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+      </nav>
+    </header><!-- /.main-header header-style-one -->
+    <section class="page-title-block text-center">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="thm-breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <span class="page-title">About Us</span>
+        </div><!-- /.thm-breadcrumb -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title-block -->
+
+     <!-- Popup Form -->
+            <div id="appointmentPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">×</span>
+                    <h3>Book Your Appointment</h3>
+                    <div class="form-container">
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                        <input type="text" id="address" placeholder="Address" required>
+                        <select id="service" required>
+                            <option value="" disabled selected>-Select Service-</option>
+                            <option value="Medical Laboratory">Medical Laboratory</option>
+                            <option value="Corporate Testing">Corporate Testing</option>
+                            <option value="Radiology">Radiology</option>
+                            <option value="Sonogram">Sonogram</option>
+                            <option value="Treadmill">Treadmill</option>
+                            <option value="EEG">EEG</option>
+                            <option value="Audiometry">Audiometry</option>
+                            <option value="Spirometry">Spirometry</option>
+                            <option value="Echo / ECG">Echo / ECG</option>
+                            <option value="Diabetic & Endocrinology Clinic">Diabetic & Endocrinology Clinic</option>
+                            <option value="Ambulance Service">Ambulance Service</option>
+                        </select>
+                        <textarea id="message" placeholder="Your Message" rows="3" required></textarea>
+                        <button type="submit" onclick="submitForm()">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+    <section class="about-style-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 unorder-lg-5 d-flex mt-3 mb-3 align-items-center justify-content-center">
+            <div>
+              <img src="images/resources/2.png" alt="Awesome Image" />
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex">
+            <div class="content-block my-auto">
+              <div class="title-block">
+                <span class="tag-line">Some Story</span><!-- /.tag-line -->
+                <h2>30 Years Of Experience</h2>
+              </div><!-- /.title-block -->
+              <p> Sanket Diagnostics Ltd is Zambia’s leader in advanced diagnostic services. They are NHIMA
+                accredited and supported by a world-class multi-disciplinary medical team.
+              </p>
+
+              <p>Sanket Diagnostics Centre was established in 1992 with the vision to serve the community with
+                world-class professionals and technology. Sanket’s global hub is in Gujarat, India, which supports
+                Sanket Zambia with specialty & sub-specialty in pathology. In our journey of 30 years, we have
+                successfully served more than 20 million patients. Our patient-centred pathology services include
+                more than 2000 tests in the disciplines of Hematology, Biochemistry, Microbiology, Serology,
+                Histopathology, and Immunoassays as well as in the area of infectious diseases.
+              </p>
+              <div>
+
+                <p class="toggle-paragraph limited-lines">
+                  Sanket India started its way to Zambia in April 2012, with the opening of its affiliate company
+                  Sanket Diagnostics (Z) in Lusaka, Zambia. Hospitals in Zambia, both government and private
+                  sector, work hand in hand with Sanket. Zambia’s leading independent laboratory with Seventeen
+                  (17) operations across Zambia, as well as a partner in leading imaging centres in the country,
+                  Sanket-Sunol. Sanket presently leads a team of 250+ professionals and actively fosters research
+                  initiatives by covering 60% of the expenses associated with case studies conducted by medical
+                  residents
+                </p>
+
+                <a href="#" class="toggle-button more-btn">Read more</a>
+
+              </div><!-- /.content-block -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.about-style-two -->
+
+    <section class="about-style-two">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 d-flex">
+            <div class="content-block my-auto">
+              <div class="title-block">
+                <span class="tag-line mb-3 fw-bold"> FOUNDER & DIRECTOR</span><!-- /.tag-line -->
+                <h3> MR. SALIM ADAM MUSA PATEL</h3>
+              </div><!-- /.title-block -->
+
+              <p> In 2012, Mr. Salim Patel embarked on his transformative journey in Zambia, dedicating the
+                past 11 years to establishing over 10 cutting-edge laboratories across the nation. Beyond his
+                entrepreneurial pursuits, Mr. Patel is a Philanthropist with a focus on the development of women
+                and children in Zambia and has adopted orphanages. His commitment to social welfare extends to
+                the challenging times of the COVID-19 pandemic, where he and his dedicated staff emerged as a
+                pillar of support for the entire nation.
+              </p>
+              <div>
+
+                <p class="toggle-paragraph limited-lines">
+                  Mr. Patel actively contributes to the professional development of healthcare practitioners. He
+                  plays a pivotal role in organizing and participating in major Continuing Medical Education (CME)
+                  events, fostering the enhancement of doctors' knowledge and technical expertise. Through his
+                  multifaceted contributions, Mr. Patel has become a beacon of positive change and progress in
+                  Zambia’s healthcare landscape.
+                </p>
+
+                <a href="#" class="toggle-button more-btn">Read more</a>
+
+              </div><!-- /.content-block -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+          <div class="col-lg-6 order-lg-5 d-flex mt-3 mb-3 align-items-center justify-content-center">
+            <div>
+              <img src="images/resources/1.png" alt="Awesome Image" />
+            </div>
+          </div>
+        </div><!-- /.container -->
+    </section><!-- /.about-style-two -->
+
+    <!-- <section class="mission-style-one wow fadeInUp home-page-two" data-wow-duration="1300ms">
+
+    <div class="container">
+    <div class="row g-4">
+
+    
+      <div class="col-md-4">
+        <div class="card h-100 shadow rounded p-3">
+          <div class="count-block fs-4 fw-bold text-primary">01</div>
+          <h3 class="card-title mt-2">Our Mission</h3>
+          <p class="card-text short-text">
+            We are here to improve health outcomes in Zambia...
+          </p>
+          <p class="card-text full-text d-none">
+            We are here to improve health outcomes in Zambia, thus making a safer and healthier nation by 
+            providing our customers, including patients, clinical and laboratory health service providers, as 
+            well as insurance schemes.
+          </p>
+          <button class="btn btn-primary btn-sm read-more-btn">Read more</button>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow rounded p-3">
+          <div class="count-block fs-4 fw-bold text-primary">02</div>
+          <h3 class="card-title mt-2">Our Vision</h3>
+          <p class="card-text short-text">
+            We’re all about delivering world-class diagnostics...
+          </p>
+          <p class="card-text full-text d-none">
+            We’re all about delivering world-class diagnostics using more than 4000 tests in 
+            the medical lab with high-tech radiology departments that help Zambians to achieve 
+            the best life they can through good health. Every day, our team works to be Zambia’s 
+            most trusted multidisciplinary diagnostics services provider delivering expert services 
+            on behalf of the world’s leading Quality Control Consultancy, Randox...
+          </p>
+          <button class="btn btn-primary btn-sm read-more-btn">Read more</button>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4">
+        <div class="card h-100 shadow rounded p-3">
+          <div class="count-block fs-4 fw-bold text-primary">03</div>
+          <h3 class="card-title mt-2">Our Value</h3>
+          <p class="card-text short-text">
+            Sanket’s Core Values were created by our team...
+          </p>
+          <p class="card-text full-text d-none">
+            Sanket’s Core Values were created by our team more than a decade ago and act as 
+            guiding principles for how we conduct ourselves as an organization. 
+            Our Core Values set the standard for professionalism...
+          </p>
+          <button class="btn btn-primary btn-sm read-more-btn">Read more</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+        </section> -->
+    <section class="service-style-one home-page-two">
+      <div class="container">
+        <div class="title-block-style-two text-center ">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="single-service-one">
+                <div class="text-block title-block">
+                  <h3><span class="tag-line">OUR MISSION</span></h3>
+                  <p class="toggle-par limit-line"> We are here to improve health outcomes in Zambia, thus making a
+                    safer and healthier nation by
+                    providing our customers, including patients, clinical and laboratory health service providers, as
+                    well as insurance schemes.
+                  </p>
+
+                  <a href="#" class="read-more-btn" style="color: #ee961a;">Read more</a>
+                </div><!-- /.text-block -->
+              </div><!-- /.single-service-one -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <div class="single-service-one">
+
+                <div class="text-block title-block">
+                  <h3><span class="tag-line">OUR VISION</span></h3>
+                  <p id="toggle-par" class="limit-line">
+                    We’re all about delivering world-class
+                    diagnostics using more than 4000 tests in
+                    the medical lab with high-tech radiology
+                    departments that help Zambians to achieve
+                    the best life they can through good health.
+                    Every day, our team works to be Zambia’s
+                    most trusted multidisciplinary diagnostics
+                    services provider delivering expert services
+                    on behalf of the world’s leading Quality
+                    Control Consultancy, Randox. Quality control
+                    consulting to hospital and standalone
+                    laboratories across Zambia. As for Sanket’s
+                    own diagnostics services, we offer Pathology,
+                    Microbiology, Biochemistry, Histology,
+                    Genetics, Histopathology, IHC, Cold Biopsy,
+                    MRI, Echo And Doppler, as well as 64 Slice
+                    CT Scan, Digital X Ray, and Mammography.
+                    All Sanket services are provided by licensed
+                    professionals expert in advanced medical
+                    technologies and laboratory best practices.
+                  </p>
+
+                  <a href="#" class="read-more-btn" style="color: #ee961a;">Read more</a>
+                </div><!-- /.text-block -->
+              </div><!-- /.single-service-one -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <div class="single-service-one">
+                <div class="text-block title-block">
+                  <h3><span class="tag-line">OUR VALUES</span></a></h3>
+                  <p id="toggle-par" class="limit-line">
+                    Sanket’s Core Values were created by our
+                    team more than a decade ago and act as
+                    guiding principles for how we conduct
+                    ourselves as an organization.
+                    Our Core Values set the standard for
+                    professionalism with which we conduct
+                    ourselves in our day-to-day duties.
+                    Individually, our Core Values articulate
+                    our commitment to medical excellence.
+                    Collectively, they empower our people
+                    to deliver exceptional medical services
+                    to doctors, patients, insurance schemes
+                    like NHIMA as well as collaborator health
+                    systems.
+                    <br>
+                    Since their inception, Sanket’s Core Values
+                    have been our business’ unifying code of
+                    conduct.
+                  </p>
+                  <a href="#" class="read-more-btn" style="color: #ee961a;">Read more</a>
+                </div><!-- /.text-block -->
+              </div><!-- /.single-service-one -->
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.service-style-one -->
+    <!-- <section class="cta-style-one text-center home-page-two">
+            <div class="container">
+                <div class="title-block">
+                    <span class="tag-line">Keep Runing</span>
+                    <h2>Looking for Certified Trainer</h2>
+                </div>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br /> mollit anim id est laborum.</p>
+                <a href="contact.html" class="cta-btn">Get Appointment</a>
+            </div>
+        </section> -->
+
+    <div class="container  my-5"> <!-- Restored my-5 for vertical spacing -->
+      <div class="row gx-4"> <!-- Kept gx-4 for column gap -->
+        <!-- Left Side -->
+        <div class="col-md-6 left-box px-3 mb-4 mb-md-0 "> <!-- Added px-3 -->
+          <h3>Affordable, Reliable, and Committed to You :</h3>
+          <ul>
+            <li>Delivering customer satisfaction by exceeding expectations</li>
+            <li>Adding value to all customer segments, especially patients</li>
+            <li>Utilize fault diagnostic services and problem-solving methods</li>
+            <li>Developing cost-effective solutions to meet customer goals</li>
+            <li>Delivering quality work with accurate results on time</li>
+            <li>Using the best technology and methods</li>
+            <li>Improving and optimizing internal processes</li>
+            <li>Employing globally competent and talented staff</li>
+            <li>Investing in training and career opportunities</li>
+            <li>Recognizing and rewarding outstanding team performance</li>
+            <li>Upholding ethical standards in business and finance</li>
+            <li>Respecting our customers and team members</li>
+            <li>Operating with environmental responsibility</li>
+          </ul>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-md-6 right-box px-3"> <!-- Added px-3 -->
+          <h3 class="mb-4" style="color:#fc8209;">Why Choose Sanket?</h3>
+
+          <div class="faq-item mb-3">
+            <div class="faq-question">What makes Sanket stand out in diagnostics?</div>
+            <div class="faq-answer">Sanket provides fast, reliable tests for your heart, lungs, and blood with trusted
+              accuracy.</div>
+          </div>
+
+          <div class="faq-item mb-3">
+            <div class="faq-question">What scan services are available?</div>
+            <div class="faq-answer">We offer MRI, CT scans, X-rays, and ultrasounds with quick appointments close to
+              home.</div>
+          </div>
+
+          <div class="faq-item mb-3">
+            <div class="faq-question">How do I check my heart’s health at Sanket?</div>
+            <div class="faq-answer">We provide advanced stress tests and easy heart diagnostics for accurate
+              assessments.</div>
+          </div>
+
+          <div class="faq-item mb-3">
+            <div class="faq-question">Can Sanket detect allergies or infections?</div>
+            <div class="faq-answer">Yes, we use specialized tests to identify allergies and infections causing your
+              symptoms.</div>
+          </div>
+
+          <div class="faq-item mb-3">
+            <div class="faq-question">When will I get my test results?</div>
+            <div class="faq-answer">Same-day results are available for many tests so you're not left waiting.</div>
+          </div>
+
+          <div class="faq-item mb-3">
+            <div class="faq-question">Are there lung tests for smokers or pollution effects?</div>
+            <div class="faq-answer">Yes, we offer simple and accurate lung tests for smokers or those exposed to
+              pollution.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="testimonials-style-one home-page-two">
+      <div class="container">
+        <div class="title-block text-center">
+          <span class="tag-line">Testimonials</span><!-- /.tag-line -->
+          <h2>What Client Say</h2>
+        </div><!-- /.title-block -->
+        <div class="owl-carousel owl-theme testi-carousel-one">
+          <div class="item">
+            <div class="single-testimonials-one text-center">
+              <div class="icon-block mb-3">
+                <i class="fas fa-quote-left fa-3x" style="color: #fc8209;"></i>
+              </div><!-- /.icon-block -->
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna
+                aliqu enim minim veniam quis nostrud exercittion ullamco laboris nisi ut aliquip excepteur sint
+                occaecat cuidatat non proident sunt in culpa</p>
+              <h3>Walter Doyle</h3>
+              <p class="designation">Happy Client</p><!-- /.designation -->
+            </div><!-- /.single-testimonials-one -->
+          </div><!-- /.item -->
+          <div class="item">
+            <div class="single-testimonials-one text-center">
+              <div class="icon-block mb-3">
+                <i class="fas fa-quote-left fa-3x" style="color: #fc8209;"></i>
+              </div><!-- /.icon-block -->
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna
+                aliqu enim minim veniam quis nostrud exercittion ullamco laboris nisi ut aliquip excepteur sint
+                occaecat cuidatat non proident sunt in culpa</p>
+              <h3>Walter Doyle</h3>
+              <p class="designation">Happy Client</p><!-- /.designation -->
+            </div><!-- /.single-testimonials-one -->
+          </div><!-- /.item -->
+          <div class="item">
+            <div class="single-testimonials-one text-center">
+              <div class="icon-block mb-3">
+                <i class="fas fa-quote-left fa-3x" style="color: #fc8209;"></i>
+              </div><!-- /.icon-block -->
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtempor incid et dolore magna
+                aliqu enim minim veniam quis nostrud exercittion ullamco laboris nisi ut aliquip excepteur sint
+                occaecat cuidatat non proident sunt in culpa</p>
+              <h3>Walter Doyle</h3>
+              <p class="designation">Happy Client</p><!-- /.designation -->
+            </div><!-- /.single-testimonials-one -->
+          </div><!-- /.item -->
+        </div><!-- /.owl-carousel owl-theme testi-carousel-one -->
+      </div><!-- /.container -->
+    </section><!-- /.testimonials-style-one -->
+
+    <section class="brands-area-one">
+      <div class="container">
+        <div class="title-block text-center">
+          <span class="tag-line">Our Partners</span><!-- /.tag-line -->
+          <h2>Brands We Work With</h2>
+        </div><!-- /.title-block -->
+        <div class="text-center mb-4">
+          <p>We collaborate with leading brands to ensure the highest quality in diagnostics and healthcare services.
+          </p>
+        </div>
+
+        <div class="brands-carousel-one owl-carousel owl-theme">
+          <div class="item">
+            <img src="images/brands/1.png" alt="awesome image">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="images/brands/2.png" alt="awesome image">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="images/brands/3.png" alt="awesome image">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="images/brands/4.png" alt="awesome image">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="images/brands/5.png" alt="awesome image">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="images/brands/6.png" alt="awesome image">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="images/brands/7.png" alt="awesome image">
+          </div><!-- /.item -->
+          <div class="item">
+            <img src="images/brands/8.png" alt="awesome image">
+          </div><!-- /.item -->
+
+        </div><!-- /.brands-carousel-one -->
+      </div><!-- /.container -->
+    </section><!-- /.brands-area-one -->
+
+    <footer class="site-footer">
+      <div class="main-footer">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-widget about-widget">
+                <a href="index.html" class="footer-logo">
+                  <img src="images/resources/sanket_footer_logo.png" alt="awesome image">
+                </a>
+                <p>Advanced diagnostics and imaging services with fast, accurate medical reports,
+                  trusted by doctors and patients daily.</p>
+                <div class="social-block">
+                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-vimeo"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div><!-- /.social-block -->
+              </div><!-- /.footer-widget -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-widget links-widget">
+                <div class="footer-widget-title">
+                  <h3>Services</h3>
+                </div><!-- /.footer-widget-title -->
+                <ul class="links-lists">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us </a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="our-process.html">Our Process</a></li>
+                  <li><a href="shop.html">Products</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul><!-- /.links-lists -->
+              </div><!-- /.footer-widget -->
+            </div><!-- /.col-lg-3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-widget works-widget">
+                <div class="footer-widget-title">
+                  <h3>Latest Work</h3>
+                </div><!-- /.footer-widget-title -->
+                <div class="gallery-wrapper clearfix">
+                  <div class="single-gallery-item">
+                    <a href="#"><img src="images/resources/footer_1.png" alt="awesome image"></a>
+                  </div><!-- /.single-gallery-item -->
+                  <div class="single-gallery-item">
+                    <a href="#"><img src="images/resources/footer_2.png" alt="awesome image"></a>
+                  </div><!-- /.single-gallery-item -->
+                  <div class="single-gallery-item">
+                    <a href="#"><img src="images/resources/footer_3.png" alt="awesome image"></a>
+                  </div><!-- /.single-gallery-item -->
+                  <div class="single-gallery-item">
+                    <a href="#"><img src="images/resources/footer_4.png" alt="awesome image"></a>
+                  </div><!-- /.single-gallery-item -->
+                  <div class="single-gallery-item">
+                    <a href="#"><img src="images/resources/footer_5.png" alt="awesome image"></a>
+                  </div><!-- /.single-gallery-item -->
+                  <div class="single-gallery-item">
+                    <a href="#"><img src="images/resources/footer_6.png" alt="awesome image"></a>
+                  </div><!-- /.single-gallery-item -->
+                </div><!-- /.gallery-wrapper -->
+              </div><!-- /.footer-widget -->
+            </div><!-- /.col-lg-3 -->
+            <!-- Add this in <head> if Font Awesome is not already included -->
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-widget newsletter-widget">
+                <div class="footer-widget-title">
+                  <h3 class="text-white">Address</h3>
+                </div>
+                <div class="newsletter-form text-white">
+                  <p>
+                    <i class="fa fa-map-marker"></i>
+                    Plot 108, CNR Great East Road,<br>
+                    Corner of Bwijimfumu Road, Rhodespark,<br>
+                    P.O. Box FAIRVIEW 39035,<br>
+                    Lusaka, Zambia
+                  </p>
+                  <p>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:ceo@sanketdiagnostic.com" class="footer-link">ceo@sanketdiagnostic.com</a>
+                  </p>
+                  <p>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+260974642600" class="footer-link">+260 974 642 600</a>
+                  </p>
+                  <p>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+260975307075" class="footer-link">+260 975 307 075</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.main-footer -->
+      <div class="bottom-footer text-center">
+        <div class="container">
+          <p> &copy; 2025 <a href="https://nearlooks.com/" target="_blank" rel="noopener noreferrer">Nearlook Mart Pvt.
+              Ltd.</a> All rights reserved.</p>
+        </div><!-- /.container -->
+      </div><!-- /.bottom-footer -->
+    </footer><!-- /.site-footer -->
+  </div><!-- /.page-wrapper -->
+  <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+  <!-- /.scroll-to-top -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/theme.js"></script>
+
+  <script>
+    // For the single "About" paragraph
+    document.querySelectorAll('.toggle-button').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const para = this.previousElementSibling;
+        para.classList.toggle('limited-lines');
+        this.textContent = para.classList.contains('limited-lines') ? 'Read more' : 'Read less';
+      });
+    });
+
+    // For the repeated Mission/Vision/Values
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        const paragraph = this.previousElementSibling;
+        paragraph.classList.toggle('limit-line');
+        this.textContent = paragraph.classList.contains('limit-line') ? 'Read more' : 'Read less';
+      });
+    });
+  </script>
+
+  <!-- <script>
+  $('.faq-question').on('click', function () {
+    $(this).toggleClass('active');
+    $(this).next('.faq-answer').slideToggle(200);
+  });
+</script> -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        const isActive = parent.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach(el => {
+          el.classList.remove('active');
+        });
+
+        if (!isActive) {
+          parent.classList.add('active');
+        }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.brands-carousel-one').owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,           // 🔁 Auto sliding
+        autoplayTimeout: 1000,    // ⏱️ 2 seconds per slide
+        autoplayHoverPause: true, // ⏸ Pause on hover
+        responsive: {
+          0: {
+            items: 2
+          },
+          600: {
+            items: 4
+          },
+          1000: {
+            items: 6
+          }
+        }
+      });
+    });
+
+
+    
+  </script>
+
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/js/bootstrap-select.min.js"></script> -->
+
+
+
+
+</body>
+
+
+<!-- Mirrored from ashik.templatepath.net/cameron-main-html/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 May 2025 10:31:07 GMT -->
+
+</html>
