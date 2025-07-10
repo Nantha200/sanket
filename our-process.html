@@ -489,6 +489,16 @@
         }
     </script>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggler = document.querySelector(".menu-toggler");
+        const menu = document.querySelector(toggler.getAttribute("data-target"));
+
+        toggler.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        });
+    });
+</script>
 </body>
 
 </html>

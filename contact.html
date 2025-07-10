@@ -42,6 +42,19 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
+
+@media (max-width: 991px) {
+    .main-navigation {
+        display: none;
+    }
+
+    .main-navigation.active {
+        display: block;
+        padding: 15px;
+    }
+}
+
+
     </style>
 
 </head>
@@ -83,9 +96,11 @@
                             <img src="images/resources/logo_main_3.png" class="stricky-logo" alt="logo" />
                         </a>
 
-                        <button class="menu-toggler" data-target=".header-style-one .main-navigation">
-                            <span class="fa fa-bars"></span>
-                        </button>
+<button class="menu-toggler" data-target=".header-style-one .main-navigation">
+    <span class="fa fa-bars"></span>
+</button>
+
+
                     </div>
 
 
@@ -421,6 +436,19 @@
     <!-- google map helper -->
     <script src="js/gmaps.js"></script>
     <script src="js/map-helper.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggler = document.querySelector(".menu-toggler");
+        const menu = document.querySelector(toggler.getAttribute("data-target"));
+
+        toggler.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        });
+    });
+</script>
+
+
 </body>
 
 

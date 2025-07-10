@@ -5018,3 +5018,15 @@ a:visited {
                 font-size: 14px;
             }
         }
+
+
+        @media (max-width: 991px) {
+    .main-navigation {
+        display: none !important;
+    }
+
+    .main-navigation.active {
+        display: block !important;
+        padding: 15px !important;
+    }
+}
